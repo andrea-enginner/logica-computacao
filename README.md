@@ -1,2 +1,2 @@
-# logica-computacao
-Repositório para a disciplina de Lógica para Computação
+# Lógica para Computação
+Projeto em prolog para a disciplina Lógica para Computação: Mitologia Grega.
