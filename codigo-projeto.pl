@@ -52,21 +52,21 @@ filho(hermafrodito, hermes).
 filho(eros, ares).
 filho(asclepio, apolo).
 
-%zeus + métis = atena
-%zeus + dione = afrodite
-%zeus + leto = apolo 
-%%zeus + leto = artemis
-%zeus + maia = hermes
-%zeus + sêmele = dionísio
-%zeus + hera = ares
-%zeus+ hera = hefesto
+% zeus + metis = atena
+% zeus + dione = afrodite
+% zeus + leto = apolo 
+% zeus + leto = artemis
+% zeus + maia = hermes
+% zeus + sêmele = dionísio
+% zeus + hera = ares
+% eus+ hera = hefesto
 
 mae(metis, atena).
 mae(dione, afrodite).
 mae(leto, apolo).
 mae(leto, artemis).
 mae(maia, hermes).
-mae(sêmele, dionísio).
+mae(semele, dionisio).
 mae(hera, ares).
 mae(hera, hefesto).
 
@@ -85,39 +85,17 @@ dominio(hefesto, metalurgia).
 dominio(afrodite, beleza).
 dominio(hermes, comercio).
 dominio(dionisio, vinho).
+dominio(talia,comedia).
+dominio(eros, amor).
+dominio(asclepio, medicona).
+dominio(hermafrodito, uniao).
 
 % Relacionamentos de irmãos
 irmao(X, Y) :- filho(X, Z), filho(Y, Z), X \= Y.
 
-% Verifica se um deus é descendente de outro
-descendente(X, Y) :- filho(X, Y).
-descendente(X, Y) :- filho(X, Z), descendente(Z, Y).
 
-%para responder a primeira questão tem que criar o fato sexo:
+% para responder a primeira questão tem que criar o fato sexo:
 sexo(atena, fem).
 sexo(artemis, fem).
 sexo(afrodite, fem).
-
-
-%CONSULTAS:
-
-% 1-Quais as deusas filhas de Zeus?
-%findall(X,(filho(X, zeus), sexo(X, fem)),L).
-
-% 2 - quais os irmaos de zeus e seus respectivos dominios?
-%findall((Y,X),(irmao(zeus, Y),dominio(Y, X)),L).
-
-% 3 - Quantos e quais são os filhos do titã Cronos? 
-% findall(F, filho(F, cronos), Filhos), length(Filhos, N).
-
-% 4 - Crie uma regra para retornar todos os descendentes de Cronos
-%descendente(X, Y) :- filho(X, Y).
-%descendente(X, Y) :- filho(X, Z), descendente(Z, Y).
-
-% 5 - Crie uma regra para verficar se dois deuses filhos de Zeus tem mães diferente
-% se quiser criar essa regra pra facilitar a consulta:
-%filhozeus(X) :- filho(X,zeus)
-
-%verificar se dois deuses tem a mesma mãe:
-%maediferente(X,Y) :- filhozeus(X), filhozeus(Y), mae(M1, X), mae(M2, Y), M1 \= M2.
 
