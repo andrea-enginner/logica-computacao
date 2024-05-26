@@ -3,7 +3,7 @@
 ## Projeto em Prolog para a disciplina Lógica para Computação: Mitologia Grega.
 
 <p align="center">
-  <img width="460" height="300" src="https://raw.githubusercontent.com/andrea-enginner/logica-computacao/main/image.png">
+  <img width="460" height="600" src="https://raw.githubusercontent.com/andrea-enginner/logica-computacao/main/image.png">
 </p>
 
 ### Descrição
