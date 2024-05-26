@@ -29,7 +29,7 @@ questões propostas.
 ### Explicação da Genealogia da Mitologia Grega
 
 <p align="center">
-  <img width="460" height="300" src="https://raw.githubusercontent.com/andrea-enginner/logica-computacao/main/image.png">
+  <img width="460" height="300" src="https://raw.githubusercontent.com/andrea-enginner/logica-computacao/main/Genealogia%20Mitologia%20Grega.png">
 </p>
 
 
