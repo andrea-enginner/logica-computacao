@@ -110,9 +110,13 @@ sexo(afrodite, fem).
 % 3 - Quantos e quais são os filhos do titã Cronos? 
 % findall(F, filho(F, cronos), Filhos), length(Filhos, N).
 
-% 4 - Crie uma regra para retornar todos os descendentes de Cronos
+% 4 - Retorne todos os descendentes de Cronos e seus dominios. (Dica: crie uma regra para os descendentes)
+% A regra: 
 %descendente(X, Y) :- filho(X, Y).
 %descendente(X, Y) :- filho(X, Z), descendente(Z, Y).
+
+%A consulta: 
+%findall((X,Y),(descendente(X,cronos), dominio(X,Y)),L).
 
 % 5 - Crie uma regra para verficar se dois deuses filhos de Zeus tem mães diferente
 % se quiser criar essa regra pra facilitar a consulta:
@@ -120,4 +124,3 @@ sexo(afrodite, fem).
 
 %verificar se dois deuses tem a mesma mãe:
 %maediferente(X,Y) :- filhozeus(X), filhozeus(Y), mae(M1, X), mae(M2, Y), M1 \= M2.
-
