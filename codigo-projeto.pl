@@ -59,7 +59,7 @@ filho(asclepio, apolo).
 % zeus + maia = hermes
 % zeus + sêmele = dionísio
 % zeus + hera = ares
-% eus+ hera = hefesto
+% zeus+ hera = hefesto
 
 mae(metis, atena).
 mae(dione, afrodite).
