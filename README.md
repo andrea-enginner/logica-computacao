@@ -1,4 +1,4 @@
-# Lógica para Computação
+# Lógica para Computação q
 Projeto em Prolog para a disciplina Lógica para Computação: Mitologia Grega.
 
 <div style="text-align:center;">
