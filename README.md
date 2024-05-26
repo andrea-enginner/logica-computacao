@@ -20,11 +20,16 @@ da mitologia grega, utilizando o Prolog como uma linguagem de programação.
 ### Como utilizar
 
 
--Para utilizar este projeto, você precisará ter instalado o Prolog em sua máquina ou apenas usar um interpretador online (https://swish.swi-prolog.org/).
+- Para utilizar este projeto, você precisará ter instalado o Prolog em sua máquina ou apenas usar um interpretador online (https://swish.swi-prolog.org/).
 
--Para executar o projeto, abra o Prolog e carregue o arquivo `codigo-projeto.pl`.
+- Para executar o projeto, abra o Prolog e carregue o arquivo `codigo-projeto.pl`.
 Após isso, você pode utilizar as funções fornecidas pelo projeto para responder as
 questões propostas.
 
-### Exemplo
+### Explicação da Genealogia da Mitologia Grega
+
+<p align="center">
+  <img width="460" height="300" src="https://raw.githubusercontent.com/andrea-enginner/logica-computacao/main/image.png">
+</p>
+
 
