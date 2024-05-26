@@ -52,6 +52,24 @@ filho(hermafrodito, hermes).
 filho(eros, ares).
 filho(asclepio, apolo).
 
+%zeus + métis = atena
+%zeus + dione = afrodite
+%zeus + leto = apolo 
+%%zeus + leto = artemis
+%zeus + maia = hermes
+%zeus + sêmele = dionísio
+%zeus + hera = ares
+%zeus+ hera = hefesto
+
+mae(metis, atena).
+mae(dione, afrodite).
+mae(leto, apolo).
+mae(leto, artemis).
+mae(maia, hermes).
+mae(sêmele, dionísio).
+mae(hera, ares).
+mae(hera, hefesto).
+
 % Domínios dos deuses
 dominio(zeus, ceu).
 dominio(poseidon, mares).
@@ -80,7 +98,8 @@ sexo(atena, fem).
 sexo(artemis, fem).
 sexo(afrodite, fem).
 
-%Consultas
+
+%CONSULTAS:
 
 % 1-Quais as deusas filhas de Zeus?
 %findall(X,(filho(X, zeus), sexo(X, fem)),L).
@@ -94,4 +113,11 @@ sexo(afrodite, fem).
 % 4 - Crie uma regra para retornar todos os descendentes de Cronos
 %descendente(X, Y) :- filho(X, Y).
 %descendente(X, Y) :- filho(X, Z), descendente(Z, Y).
+
+% 5 - Crie uma regra para verficar se dois deuses filhos de Zeus tem mães diferente
+% se quiser criar essa regra pra facilitar a consulta:
+%filhozeus(X) :- filho(X,zeus)
+
+%verificar se dois deuses tem a mesma mãe:
+%maediferente(X,Y) :- filhozeus(X), filhozeus(Y), mae(M1, X), mae(M2, Y), M1 \= M2.
 
