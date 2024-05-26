@@ -19,8 +19,8 @@ da mitologia grega, utilizando o Prolog como uma linguagem de programação.
 
 ### Como utilizar
 
+
 Para utilizar este projeto, você precisará ter instalado o Prolog em sua máquina ou apenas usar um interpretador online.
--
 
 Para executar o projeto, abra o Prolog e carregue o arquivo `codigo-projeto.pl`.
 Após isso, você pode utilizar as funções fornecidas pelo projeto para responder as
