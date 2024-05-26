@@ -1,4 +1,6 @@
 # Lógica para Computação
-Projeto em prolog para a disciplina Lógica para Computação: Mitologia Grega.
+Projeto em Prolog para a disciplina Lógica para Computação: Mitologia Grega.
 
-![alt text](image.png)
+<div style="text-align:center;">
+  <img src="image.png" alt="Imagem da documentação" style="display:inline-block;">
+</div>
