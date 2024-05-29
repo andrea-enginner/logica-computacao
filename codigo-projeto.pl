@@ -1,3 +1,5 @@
+% ANDRÉA CARVALHO PIRES E ANTONIO DOS SANTOS FILHO
+
 % Hierarquia dos Deuses Gregos
 
 % Fatos: Deuses 
@@ -52,15 +54,7 @@ filho(hermafrodito, hermes).
 filho(eros, ares).
 filho(asclepio, apolo).
 
-% zeus + metis = atena
-% zeus + dione = afrodite
-% zeus + leto = apolo 
-% zeus + leto = artemis
-% zeus + maia = hermes
-% zeus + sêmele = dionísio
-% zeus + hera = ares
-% zeus+ hera = hefesto
-
+% Mães dos filhos de zeus
 mae(metis, atena).
 mae(dione, afrodite).
 mae(leto, apolo).
@@ -90,12 +84,40 @@ dominio(eros, amor).
 dominio(asclepio, medicona).
 dominio(hermafrodito, uniao).
 
+% Regra:
+
 % Relacionamentos de irmãos
 irmao(X, Y) :- filho(X, Z), filho(Y, Z), X \= Y.
 
+% Questoes e solucoes propostas:
 
-% para responder a primeira questão tem que criar o fato sexo:
-sexo(atena, fem).
-sexo(artemis, fem).
-sexo(afrodite, fem).
+% 1-Quais as deusas filhas de Zeus?
+%Para responder a primeira questão tem-se que criar o fato sexo:
+%sexo(atena, fem).
+%sexo(artemis, fem).
+%sexo(afrodite, fem).
+%Consulta: 
+%findall(X,(filho(X, zeus), sexo(X, fem)),L).
+
+% 2 - quais os irmaos de zeus e seus respectivos dominios?
+%Consulta: 
+%findall((Y,X),(irmao(zeus, Y),dominio(Y, X)),L).
+
+% 3 - Quantos e quais sao os filhos do titã Cronos? (Dica: utilize-se a função length para saber o comprimento de uma lista)
+% Exemplo:length(NomeDaLista, NomeDaVariavelQueRecebeComprimentoDaLista).
+%Consulta: 
+% findall(F, filho(F, cronos), Filhos), length(Filhos, N).
+
+% 4 - Retorne todos os descendentes de Cronos e seus dominios. (Dica: crie uma regra para os descendentes)
+% A regra: 
+%descendente(X, Y) :- filho(X, Y).
+%descendente(X, Y) :- filho(X, Z), descendente(Z, Y).
+%Consulta: 
+%findall((X,Y),(descendente(X,cronos), dominio(X,Y)),L).
+
+% 5 - Crie uma regra para verficar se dois deuses filhos de Zeus tem maes diferente
+% Regra para facilitar consulta:
+%filhozeus(X) :- filho(X,zeus).
+%Consulta: 
+%maediferente(X,Y) :- filhozeus(X), filhozeus(Y), mae(M1, X), mae(M2, Y), M1 \= M2.
 
